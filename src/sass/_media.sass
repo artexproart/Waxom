@@ -1,0 +1,45 @@
+@media (max-width: 1100px)
+    .container
+        max-width: 860px
+        padding: 0 40px
+@media (max-width: 860px)
+    .container
+        max-width: 800px
+        padding: 0 30px
+    .hero
+        margin: 155px auto 0 auto
+        &__title
+            font-size: 36px
+        &__subtitle
+            font-size: 24px
+        &__description
+            font-size: 14px
+            max-width: 420px
+        &-dots
+            margin: 100px 0 0 0
+@media (max-width: 600px)
+    .navbar
+        flex-direction: column
+        &-link
+            margin: 0
+        &__card
+            margin: 0 0 0 200px
+        &-input
+            &__search
+                margin: -20px 200px 0 0
+    .hero
+        flex-wrap: nowrap
+        margin: 35px auto 0 auto
+        &__title
+            font-size: 24px
+        &__subtitle
+            font-size: 18px
+        &__description
+            font-size: 12px
+            max-width: 280px
+        &-dots
+            display: none
+@media (max-width: 320px)
+    .container
+        max-width: 300px
+        padding: 0 20px

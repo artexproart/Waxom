@@ -9,9 +9,11 @@ a
     &:focus
         color: #c7b299
 .container
-    max-width: 1170px
+    max-width: 1280px
+    padding: 0 50px
     margin: 0 auto
-button
+.button
+    display: block
     width: 170px
     height: 53px
     background-color: #998675
@@ -19,11 +21,13 @@ button
     border: none
     font-family: Raleway
     font-size: 14px
-    line-height: 23px
+    line-height: 53px
     font-weight: 800
     text-transform: uppercase
     color: #ffffff
-    margin: 50px 0
+    margin: 50px auto
     cursor: pointer
-button:hover
+    transition: 1s
+.button:hover
     background-color: #999999
+    transform: scale(1.1)

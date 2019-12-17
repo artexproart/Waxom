@@ -2,14 +2,18 @@
     margin: 0 auto
     padding: 40px 0
     background-image: url('../img/photo_11982.jpg')
+    background-repeat: no-repeat
+    background-size: cover
     max-width: 1920px
-    // min-height: 1024px
 .navbar
     display: flex
     justify-content: space-between
     align-items: center
     &-brand
         min-width: 195px
+        transition: 1s
+        &:hover
+            transform: scale(1.1)
         &__logo
             width: 64px
             height: 56px
@@ -38,14 +42,23 @@
         margin: 0 10px
     &__search
         margin: 0 10px
-
+    &-input
+        &__search
+            background: url('../img/icon_search_12272.svg')
+            border: none
+            background-repeat: no-repeat
+            background-size: contain
+            width: 40px
+            &:focus
+                background-color: #e2e2e2
+                outline: none
 .hero
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
     max-width: 1600px
-    margin: 285px auto 0 auto
+    margin: 265px auto 0 auto
     &-wrp
         text-align: center
     &__subtitle
@@ -72,7 +85,7 @@
     &-dots
         width: 100%
         text-align: center
-        margin: 210px 0 40px 0
+        margin: 210px 0 0 0
         &__dot
             width: 11px
             height: 11px
