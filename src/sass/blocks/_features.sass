@@ -1,0 +1,43 @@
+.feature
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    padding: 80px 0
+.features
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    width: 290px
+    padding: 10px 10px 0 10px
+    box-sizing: border-box
+    &:after
+        content: ""
+        display: block
+        width: 150px
+        height: 3px
+        background-color: #f1eee9
+    &:hover .features-icon
+        fill: #c7b299
+    &:hover .features-title
+        color: #c7b299
+    &:hover:after
+        background-color: #c7b299
+    &-icon
+        fill: #c7b299
+        margin: 0 0 20px 0
+    &-title
+        width: 100%
+        margin: 0 0 10px 0
+        text-align: center
+        font-family: Raleway
+        font-size: 22px
+        line-height: 1.2
+        font-weight: 600
+        color: #555555
+    &-txt
+        text-align: center
+        font-family: Montserrat
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        color: #8c8c8c

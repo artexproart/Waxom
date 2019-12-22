@@ -1,0 +1,105 @@
+.project
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &-title
+        width: 100%
+        text-align: center
+        font-family: Raleway
+        font-size: 30px
+        line-height: 1.2
+        font-weight: 600
+        color: #555555
+    &-subtitle
+        display: block
+        margin: 0 auto
+        font-family: Montserrat
+        font-size: 16px
+        line-height: 28px
+        font-weight: 300
+        color: #8c8c8c
+.article
+    width: 370px
+    height: 237px
+    margin: 80px 0 60px 0
+    position: relative
+
+    &:hover .article-btn-link
+        display: block
+        color: #c7b299
+
+    &:hover .article-btn-search
+        display: block
+
+    &:hover .article-btn-link:hover
+        background-color: transparent
+
+    &:hover .article-btn-search:hover
+        background-color: transparent
+
+    &:hover .article-photo
+        filter: brightness(20%)
+
+    &:hover .article-txt-wrapper
+        background-color: #362f2d
+
+    &:hover  .article-txt-wrapper:before
+        border-bottom: 10px solid #362f2d
+
+    &-photo
+        display: block
+        width: 100%
+
+    &-txt-wrapper
+        width: 100%
+        position: relative
+        background-color: #fbfaf8
+
+    &-txt-wrapper:before
+        content: ""
+        border: 10px solid transparent
+        border-bottom: 10px solid #fbfaf8
+        position: absolute
+        top: -20px
+        left: 19px
+
+    &-title
+        display: block
+        text-align: left
+        padding: 30px 0 0 28px
+        font-family: Raleway
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 500
+        color: #c7b299
+
+    &-txt
+        display: block
+        text-align: left
+        padding: 10px 0 28px 28px
+        font-family: Montserrat
+        font-size: 14px
+        line-height: 20px
+        font-weight: 300
+        color: #d1d1d1
+
+    &-btn-link, .article-btn-search
+        width: 20px
+        height: 20px
+        display: none
+        -webkit-background-size: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        border: none
+        background-color: transparent
+        position: absolute
+        top: 45%
+
+    &-btn-link
+        background-image: url('../img/link_10955.svg')
+        left: 35%
+
+    &-btn-search
+        background-image: url('../img/lupa_10956.svg')
+        right: 35%
