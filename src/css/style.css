@@ -49,6 +49,8 @@ a:focus {
   background-color: #999999;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .header {
