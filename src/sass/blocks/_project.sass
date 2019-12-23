@@ -3,6 +3,7 @@
     justify-content: space-around
     flex-wrap: wrap
     &-title
+        margin: 80px auto 0 auto
         width: 100%
         text-align: center
         font-family: Raleway
@@ -12,12 +13,35 @@
         color: #555555
     &-subtitle
         display: block
-        margin: 0 auto
+        margin: 24px auto 40px auto
         font-family: Montserrat
         font-size: 16px
         line-height: 28px
         font-weight: 300
         color: #8c8c8c
+        max-width: 900px
+        text-align: center
+    &-button
+        margin: 120px auto 50px auto
+        &s
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            &__click
+                margin: 10px
+                background-color: #ffffff
+                width: 160px
+                height: 32px
+                border: 1.0px solid #ebebeb
+                border-radius: 3.0px
+                font-family: Montserrat
+                font-size: 14px
+                line-height: 30px
+                font-weight: 300
+                color: #8c8c8c
+                &:active
+                    background-color: #998675
+                    color: #ffffff
 .article
     width: 370px
     height: 237px
