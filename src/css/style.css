@@ -601,6 +601,200 @@ a:focus {
   right: 35%;
 }
 
+.video {
+  margin: 0 auto;
+  background-image: url("../img/bg_video.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+}
+
+.video-wrp {
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.exellent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 20px 0 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #fbfaf8;
+}
+
+.exellent-img {
+  width: 423px;
+  height: 616px;
+  background-image: url("../img/iphone_in_hand_10962.png");
+}
+
+.exellent-txt {
+  max-width: 657px;
+}
+
+.exellent-txt__title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin: 115px 0 0 0;
+}
+
+.exellent-txt__description {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.exellent-txt__property {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 300px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  text-align: center;
+}
+
+.advantages-box {
+  margin: 35px;
+  position: relative;
+}
+
+.advantages-box::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #ffffff;
+  top: 180px;
+  right: 50px;
+  width: 30px;
+}
+
+.advantages-score {
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: #ffffff;
+  display: block;
+  margin: 30px 0 20px 0;
+}
+
+.advantages-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c7b299;
+}
+
+.recent {
+  text-align: center;
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recent-card {
+  margin: 15px;
+  width: 370px;
+  min-height: 395px;
+  border: 1.0px solid #f8f8f8;
+  text-align: left;
+  padding: 0 0 30px 0;
+}
+
+.recent-card:hover {
+  background-color: #362f2d;
+}
+
+.recent-card__img {
+  width: 370px;
+  height: 220px;
+  background-image: url("../img/photo_11640.png");
+  background-size: cover;
+}
+
+.recent-card__sudtitle {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+  margin: 30px 0 0 30px;
+}
+
+.recent-card__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 20px 0 27px 30px;
+}
+
+.recent-card__link {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  margin: 0 0 30px 30px;
+}
+
+.recent-title {
+  width: 100%;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+
+.recent-desription {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.footer {
+  height: 200px;
+}
+
 @media (max-width: 1100px) {
   .container {
     max-width: 860px;
