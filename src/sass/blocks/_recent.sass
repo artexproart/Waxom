@@ -4,41 +4,6 @@
     display: flex
     justify-content: center
     flex-wrap: wrap
-    &-card
-        margin: 15px
-        width: 370px
-        min-height: 395px
-        border: 1.0px solid #f8f8f8
-        text-align: left
-        padding: 0 0 30px 0
-        &:hover
-            background-color: #362f2d
-        &__img
-            width: 370px
-            height: 220px
-            background-image: url('../img/photo_11640.png')
-            background-size: cover
-        &__sudtitle
-            font-family: Raleway
-            font-size: 20px
-            line-height: 1.2
-            font-weight: 500
-            color: #555555
-            margin: 30px 0 0 30px
-        &__text
-            font-family: Montserrat
-            font-size: 14px
-            line-height: 22px
-            font-weight: 300
-            color: #8c8c8c
-            margin: 20px 0 27px 30px
-        &__link
-            font-family: Montserrat
-            font-size: 14px
-            line-height: 20px
-            font-weight: 300
-            color: #c7b299
-            margin: 0 0 30px 30px
     &-title
         width: 100%
         font-family: Raleway
@@ -53,3 +18,46 @@
         line-height: 28px
         font-weight: 300
         color: #8c8c8c
+    &-card
+        margin: 15px
+        width: 370px
+        min-height: 395px
+        border: 1.0px solid #f8f8f8
+        text-align: left
+        padding: 0 0 30px 0
+        &:hover
+            background-color: #362f2d
+            filter: brightness(80%)
+            cursor: pointer
+        &__img
+            width: 100%
+        &__wrapper
+            text-align: left
+            margin-top: -5px
+        &__sudtitle
+            font-family: Raleway
+            font-size: 20px
+            line-height: 1.2
+            font-weight: 500
+            color: #555555
+            margin: 30px 0 0 30px
+            &:hover
+                color: #c7b299
+                filter: brightness(95%)
+        &__text
+            font-family: Montserrat
+            font-size: 14px
+            line-height: 22px
+            font-weight: 300
+            color: #8c8c8c
+            margin: 20px 0 27px 30px
+            &:hover
+                color: #ffffff
+                filter: brightness(95%)
+        &__link
+            font-family: Montserrat
+            font-size: 14px
+            line-height: 20px
+            font-weight: 300
+            color: #c7b299
+            margin: 0 0 30px 30px

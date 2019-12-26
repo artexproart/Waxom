@@ -601,17 +601,85 @@ a:focus {
   right: 35%;
 }
 
-.video {
-  margin: 0 auto;
-  background-image: url("../img/bg_video.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+.box {
   max-width: 1920px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
 }
 
-.video-wrp {
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 705px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+.video-item {
+  width: 100%;
+  height: 100%;
+}
+
+.video-txt-wrp {
+  width: 552px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+}
+
+.video-txt-btn {
+  display: block;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
-  border: 1px solid red;
+  outline: none;
+  background-image: url("../img/play_video.png");
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+
+.video-txt-p {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.video-txt-title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.video-txt-time {
+  display: block;
+  margin: 40px 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
 }
 
 .exellent {
@@ -660,6 +728,8 @@ a:focus {
   line-height: 32px;
   font-weight: 300;
   color: #8c8c8c;
+  list-style-type: none;
+  list-style-image: url("..img/num.svg");
 }
 
 .advantages {
@@ -726,53 +796,6 @@ a:focus {
       flex-wrap: wrap;
 }
 
-.recent-card {
-  margin: 15px;
-  width: 370px;
-  min-height: 395px;
-  border: 1.0px solid #f8f8f8;
-  text-align: left;
-  padding: 0 0 30px 0;
-}
-
-.recent-card:hover {
-  background-color: #362f2d;
-}
-
-.recent-card__img {
-  width: 370px;
-  height: 220px;
-  background-image: url("../img/photo_11640.png");
-  background-size: cover;
-}
-
-.recent-card__sudtitle {
-  font-family: Raleway;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: #555555;
-  margin: 30px 0 0 30px;
-}
-
-.recent-card__text {
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
-  color: #8c8c8c;
-  margin: 20px 0 27px 30px;
-}
-
-.recent-card__link {
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  color: #c7b299;
-  margin: 0 0 30px 30px;
-}
-
 .recent-title {
   width: 100%;
   font-family: Raleway;
@@ -789,6 +812,70 @@ a:focus {
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
+}
+
+.recent-card {
+  margin: 15px;
+  width: 370px;
+  min-height: 395px;
+  border: 1.0px solid #f8f8f8;
+  text-align: left;
+  padding: 0 0 30px 0;
+}
+
+.recent-card:hover {
+  background-color: #362f2d;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  cursor: pointer;
+}
+
+.recent-card__img {
+  width: 100%;
+}
+
+.recent-card__wrapper {
+  text-align: left;
+  margin-top: -5px;
+}
+
+.recent-card__sudtitle {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+  margin: 30px 0 0 30px;
+}
+
+.recent-card__sudtitle:hover {
+  color: #c7b299;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.recent-card__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 20px 0 27px 30px;
+}
+
+.recent-card__text:hover {
+  color: #ffffff;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.recent-card__link {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  margin: 0 0 30px 30px;
 }
 
 .footer {
