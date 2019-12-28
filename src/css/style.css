@@ -689,6 +689,8 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 80px 20px 0 20px;
   max-width: 1920px;
   margin: 0 auto;
@@ -742,6 +744,8 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1920px;
   min-height: 300px;
@@ -882,6 +886,7 @@ a:focus {
   margin: 0 auto;
   background-image: url("../img/bg_partners.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,7 +1015,64 @@ a:focus {
 }
 
 .footer {
-  height: 200px;
+  margin: 0 auto;
+  background-color: #111111;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-left {
+  margin: 45px 0;
+}
+
+.footer-left__txt {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.footer-left__waxom {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #959595;
+}
+
+.footer-left__link {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.footer-right {
+  margin: 45px 0;
+}
+
+.footer-right__txt {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.footer-right__text {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #959595;
 }
 
 @media (max-width: 1100px) {
