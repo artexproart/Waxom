@@ -37,7 +37,9 @@
                 </ul>
             </nav>
             <button class="navbar-cards"></button>
-            <input type="search" class="navbar-input__search">
+            <form action="#">
+                <input type="search" class="navbar-input__search">
+            </form>
         </section>
         <!-- /.header-navbar -->
         <section class="hero">
@@ -93,8 +95,12 @@
             <h2 class="ideas-title">Waxom is Realization of your Ideas.</h2>
             <p class="ideas-description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
                 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <div class="ideas-block"><img src="img/layers.png" alt="ideas" class="ideas-block__slider" width="1230"
-                    height="482"></div>
+            <div class="ideas-block">
+                <img src="img/browser_left_10769.jpg" alt="ideas" class="ideas-block__left" width="770" height="400">
+                <img src="img/browser_center_10768.jpg" alt="ideas" class="ideas-block__center" width="770"
+                    height="482">
+                <img src="img/browser_right_10770.jpg" alt="ideas" class="ideas-block__right" width="770" height="400">
+            </div>
         </section>
         <!-- /.ideas -->
         <aside class="purchase">
@@ -180,7 +186,7 @@
                 <video class="video-item" src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm"
                     width="1920" height="705" poster="img/bg_video.jpg"></video>
                 <div class="video-txt-wrp">
-                    <button class="video-txt-btn"></button>
+                    <button class="video-txt-btn" onclick="playVideo()"></button>
                     <span class="video-txt-title">Waxom Video Presentation</span>
                     <p class="video-txt-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt
                         saepius, qui sequitur mutationem consuetudium.</p>
@@ -280,7 +286,9 @@
     <section class="contacts">
         <div class="contacts-waxom contacts-box">
             <img src="img/waxom.png" class="contacts-waxom__logo" widht="180" height="65"></img>
-            <p class="contacts-waxom__txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+            <p class="contacts-waxom__txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci suscipit lobortis claritatem.</p>
             <a href="#" class="contacts-waxom__link">Read More</a>
         </div>
         <div class="contacts-post contacts-box">
@@ -288,13 +296,15 @@
             <p class="contacts-post__txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
             <h5 class="contacts-post__subtitle">September 08, 2015</h5>
             <p class="contacts-post__description">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-            <p class="contacts-post__txt">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+            <p class="contacts-post__txt">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula
+                quarta decima</p>
         </div>
         <div class="contacts-our contacts-box">
             <h4 class="contacts-our__title">Our Twitter</h4>
             <span class="contacts-our__tvit">@waxom</span>
             <span class="contacts-our__txt">Cum soluta nobis eleifend option congue nihil imperdiet doming</span>
-            <p class="contacts-our__text">Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+            <p class="contacts-our__text">Mirum est #envato notare quam littera gothica, quam nunc putamus parum
+                anteposuerit litterarum</p>
             <p class="contacts-our__text">Soluta nobis option bit.ly/1Hniso7</p>
         </div>
         <div class="contacts-wiget contacts-box">
